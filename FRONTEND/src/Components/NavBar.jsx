@@ -12,28 +12,28 @@ function NavBar(){
         "Data & Analytics"];
     return(
         <div className='navbar'>
-            <Link to="">
+            <Link to="/">
                 <button>Home</button>
             </Link>
-            <Link to="">
+            <Link to="Mock+Mode">
                 <button>Mock Mode</button>
             </Link>
-            <Link to="">
+            <Link to="/Manage+Trains">
                 <button>Manage Trains</button>
             </Link>
-            <Link to="">
+            <Link to="/Manage+Tracks">
                 <button>Manage Tracks</button>
             </Link>
-            <Link to="">
+            <Link to="/Manage+Stations">
                 <button>Manage Station</button>
             </Link>
-            <Link to="">
+            <Link to="/Scenario+Modeling">
                 <button>Scenario MOdeling</button>
             </Link>
-            <Link to="">
+            <Link to="/Conflicts+Disruptions">
                 <button>Conflicts & Disruptions</button>
             </Link>
-            <Link to="">
+            <Link to="/Data+Analytics">
                 <button>Data & Analytics</button>
             </Link>
         </div>
