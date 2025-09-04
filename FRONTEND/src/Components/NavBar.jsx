@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-function NavBar(){
+
+export function NavBar(){
     const options = [
         "Home",
         "Mock Mode",
@@ -41,4 +42,3 @@ function NavBar(){
 
 }
 
-export default NavBar

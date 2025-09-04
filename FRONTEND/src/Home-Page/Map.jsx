@@ -14,10 +14,10 @@ const DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-function Map() {
+export function Map() {
   return (
     <div className="page-container">
-      <MapContainer center={[51.505, -0.09]} zoom={13} className="map-view">
+      <MapContainer center={[22.5490755, 88.3319375]} zoom={13} className="map-view">
         {/* Base map tiles */}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
@@ -54,5 +54,3 @@ function Map() {
     </div>
   );
 }
-
-export default Map

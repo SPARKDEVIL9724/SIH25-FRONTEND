@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route element={<Layout />}>
+        <Route element={<Layout/>}>
           <Route path='/' element={<Home/>} />
           <Route path='/Scenario+Modeling' element={<ScenarioModeling/>} />
           <Route path='/Mock+Mode' element={<MockMode/>} />
