@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import './NavBarStyle.css';
 
 export function NavBar(){
     const options = [
@@ -29,7 +30,7 @@ export function NavBar(){
                 <button>Manage Station</button>
             </Link>
             <Link to="/Scenario+Modeling">
-                <button>Scenario MOdeling</button>
+                <button>Scenario Modeling</button>
             </Link>
             <Link to="/Conflicts+Disruptions">
                 <button>Conflicts & Disruptions</button>
