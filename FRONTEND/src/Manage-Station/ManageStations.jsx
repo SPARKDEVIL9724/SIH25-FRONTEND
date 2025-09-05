@@ -104,9 +104,7 @@ export function ManageStations(){
               <td>{platform.status === "Free" ? "-" : platform.train}</td>
               <td>{platform.status === "Free" ? "-" : platform.trainPNR}</td>
               <td>
-                {/* <button onClick={(e) => changeTrackState(e,track.trackID)} style={{ cursor: 'pointer' }}>
-                  {track.state==='Blocked' ? 'Free' : 'Block'}
-                </button> */}
+                <button></button>
               </td>
             </tr>
           </React.Fragment>
