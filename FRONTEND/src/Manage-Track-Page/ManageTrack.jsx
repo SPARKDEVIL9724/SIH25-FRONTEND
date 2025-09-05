@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ManageTrackStyles.css';
+
 function createData(trackID, location, usagePercentage, state){
   return { trackID, location, usagePercentage, state};
 };
