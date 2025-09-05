@@ -1,3 +1,10 @@
+body {
+  background-color: #1c2833; /* dark blue-gray background */
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 .map-view {
   height: 500px;
   width: 80%;
