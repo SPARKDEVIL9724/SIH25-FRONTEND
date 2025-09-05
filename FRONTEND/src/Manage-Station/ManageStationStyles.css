@@ -1,0 +1,200 @@
+/* Container styling */
+.container {
+  max-width: 1000px;
+  margin: 40px 0 40px 0; /* remove auto horizontal margin */
+  padding: 20px 25px 30px;
+  font-family: inherit;
+  background-color: #34495e; /* slightly lighter than navbar #2c3e50 */
+  color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Optional: add a subtle left margin for extra shift */
+  margin-left: 350px;
+}
+
+/* Fix filter label and select alignment */
+.container > label,
+.filter-container {
+  /* display: flex; */
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 20px;
+  gap: 10px;
+  color: #bdc3c7;
+  font-weight: 700;
+  font-size: 1.1rem;
+
+}
+
+/* Filter dropdown styling */
+.filter-by-status , .change-station{
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1.5px solid #2c3e50;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  background-color: #2c3e50; /* navbar color */
+  color: #ecf0f1;
+  width: 200px;
+}
+
+.filter-by-status:hover, .change-station:hover{
+  background-color: #3a5068;
+}
+
+.filter-by-status:focus, .change-station:focus{
+  border-color: #2980b9;
+  background-color: #3a5068;
+  color: #fff;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  font-size: 1rem;
+  table-layout: fixed;
+  word-wrap: break-word;
+  text-align: center;
+  background-color: #2c3e50; /* navbar color */
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(44, 62, 80, 0.8);
+  margin: 0 auto;
+}
+
+/* Table header */
+thead th {
+  background-color: #1a252f; /* darker shade */
+  color: #ecf0f1;
+  padding: 14px 10px;
+  text-align: center;
+  font-weight: 700;
+  user-select: none;
+  border-bottom: 2px solid #2980b9;
+}
+
+/* Table body rows */
+tbody tr:nth-child(even) {
+  background-color: #34495e;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #2c3e50;
+}
+
+tbody tr:hover {
+  background-color: #2980b9;
+  color: #ecf0f1;
+}
+
+/* Expanded details row with updated color scheme */
+tbody tr + tr td[colspan="4"] {
+  font-style: italic;
+  color: #117a65; 
+  background-color: #117a65; 
+  border-color: #117a65;
+  font-weight: 600;
+  box-shadow: inset 0 0 8px #d1f2eb88;
+  transition: background-color 0.3s ease;
+}
+/* Responsive expanded details row */
+@media (max-width: 768px) {
+  tbody tr + tr td[colspan="4"] {
+    background-color: #117a65;
+    color: #d1f2eb;
+    box-shadow: inset 0 0 8px #d1f2eb88;
+  }
+}
+
+/* Table cells */
+td {
+  padding: 12px 10px;
+  vertical-align: middle;
+  border: 1px solid #1a252f;
+  overflow-wrap: break-word;
+  color: #dfe6e9;
+}
+
+/* h1 styling */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #3498db;
+  text-align: center;
+  margin-bottom: 50px;
+  text-shadow: 0 0 8px #2980b9aa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding-left: 20px; /* reduce left padding on smaller screens */
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 15px;
+    border: 1px solid #1a252f;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #2c3e50;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.6);
+  }
+
+  tbody tr:hover {
+    background-color: #2980b9;
+    color: #ecf0f1;
+  }
+
+  tbody tr td {
+    border: none;
+    padding: 8px 12px;
+    position: relative;
+    padding-left: 55%;
+    text-align: left;
+    color: #dfe6e9;
+  }
+
+  tbody tr td::before {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    transform: translateY(-50%);
+    font-weight: 700;
+    color: #bdc3c7;
+  }
+
+  tbody tr td:nth-of-type(1)::before { content: "Train ID"; }
+  tbody tr td:nth-of-type(2)::before { content: "Start"; }
+  tbody tr td:nth-of-type(3)::before { content: "Destination"; }
+  tbody tr td:nth-of-type(4)::before { content: "Status"; }
+  tbody tr td:nth-of-type(5)::before { content: "ETA"; }
+  tbody tr td:nth-of-type(6)::before { content: "More Details"; }
+
+  /* Expanded details row */
+  tbody tr + tr td[colspan="4"] {
+    padding-left: 18px;
+    text-align: left;
+    background-color: #5d6d7e;
+    color: #f0e68c;
+    border-radius: 0 0 8px 8px;
+    box-shadow: inset 0 0 8px #f0e68c88;
+  }
+}
