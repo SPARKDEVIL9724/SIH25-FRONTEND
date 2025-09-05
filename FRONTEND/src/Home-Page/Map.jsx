@@ -17,7 +17,7 @@ L.Marker.prototype.options.icon = DefaultIcon;
 export function Map() {
   return (
     <div className="page-container">
-      <MapContainer center={[22.5490755, 88.3319375]} zoom={13} className="map-view">
+      <MapContainer center={[22.5490755, 88.3319375]} zoom={16} className="map-view">
         {/* Base map tiles */}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
@@ -33,9 +33,9 @@ export function Map() {
 
         {/* Circle */}
         <Circle
-          center={[51.508, -0.11]}
-          radius={500}
-          pathOptions={{ color: "red", fillColor: "#f03", fillOpacity: 0.5 }}
+          center={[22.5490755, 88.3319375]}
+          radius={150}
+          pathOptions={{ color: "red", fillColor: "#f03", fillOpacity: 1 }}
         >
           <Popup>I am a circle.</Popup>
         </Circle>
