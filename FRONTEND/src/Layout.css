@@ -1,0 +1,15 @@
+.layout-container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.page-container{
+    flex: 1;
+    margin-left: 220px; /* always 220px gap to avoid overlap*/
+    padding:20px;
+}
+@media (max-width: 768px) {
+  .page-content {
+    margin-left: 0;      /* navbar is on top. content start from full left*/
+  }
+}

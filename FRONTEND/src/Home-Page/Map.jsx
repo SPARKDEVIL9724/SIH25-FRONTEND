@@ -1,7 +1,15 @@
 import React from "react";
-import { MapContainer, TileLayer, Marker, Popup, Circle, Polygon } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Popup,
+  Circle,
+  Polygon,
+} from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import "./Map.css";
 
 // Fix default icon issue in React-Leaflet
 import iconUrl from "leaflet/dist/images/marker-icon.png";
@@ -17,7 +25,11 @@ L.Marker.prototype.options.icon = DefaultIcon;
 export function Map() {
   return (
     <div className="page-container">
-      <MapContainer center={[22.5490755, 88.3319375]} zoom={13} className="map-view">
+      <MapContainer
+        center={[22.5490755, 88.3319375]}
+        zoom={13}
+        className="map-view"
+      >
         {/* Base map tiles */}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'

@@ -13,12 +13,10 @@ export function LoginProfileButton() {
     }
   };
   return (
-    <>
-      <div id="login-profile">
-        <button id="login-profile-btn" onClick={handleProfileClick}>
-          Login/Profile
-        </button>
-      </div>
-    </>
+    <div id="login-profile">
+      <button id="login-profile-btn" onClick={handleProfileClick}>
+        Login/Profile
+      </button>
+    </div>
   );
 }
