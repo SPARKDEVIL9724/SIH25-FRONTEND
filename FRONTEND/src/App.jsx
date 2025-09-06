@@ -1,6 +1,7 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import {Home} from "./Home-Page/Home.jsx";
 import {Login} from "./Login-Page/Login.jsx";
+import {ForgotPassword} from "./Login-Page/ForgotPassword.jsx";
 import {ManageStations} from "./Manage-Station/ManageStations.jsx";
 import {ManageTrack} from "./Manage-Track-Page/ManageTrack.jsx";
 import {ManageTrains} from "./Manage-Trains-Page/ManageTrains.jsx";
@@ -21,6 +22,8 @@ function App() {
           <Route path='/Manage+Stations' element={<ManageStations/>} />
           <Route path='/Conflicts+Disruptions' element={<ManageStations/>} />
           <Route path='/Data+Analytics' element={<ManageStations/>} />
+          <Route path='/login' element={<Login/>} />
+          <Route path='/forgot-password' element={<ForgotPassword/>} />
         </Route>
       </Routes>
     </Router>

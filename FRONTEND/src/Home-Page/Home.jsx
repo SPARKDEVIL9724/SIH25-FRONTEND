@@ -1,8 +1,10 @@
-import {Map} from "./Map.jsx";
-export function Home(){
-    return(
-        <>
-            <Map/>
-        </>
-    );
+import { Map } from "./Map.jsx";
+import { LoginProfileButton } from "../Components/Login-profile-button.jsx";
+export function Home() {
+  return (
+    <>
+      <LoginProfileButton />
+      <Map />
+    </>
+  );
 }

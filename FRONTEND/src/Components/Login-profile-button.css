@@ -1,0 +1,18 @@
+#login-profile {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+#login-profile-btn {
+  width: 120px;          
+  height: 60px;         
+  border-radius: 20px;  
+  border: none;
+  padding-right: 4px;
+  padding-left: 4px;
+  background-color: #34495e;
+  color: #3498db;
+  cursor: pointer;
+  font-size: 19px;      
+}
